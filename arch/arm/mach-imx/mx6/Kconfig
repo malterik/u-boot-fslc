@@ -393,6 +393,12 @@ config TARGET_WANDBOARD
 	select BOARD_LATE_INIT
 	select SUPPORT_SPL
 
+config TARGET_ERIKBOARD
+	bool "erikboard"
+	select MX6QDL
+	select BOARD_LATE_INIT
+	select SUPPORT_SPL
+
 config TARGET_WARP
 	bool "WaRP"
 	select BOARD_LATE_INIT
@@ -468,6 +474,7 @@ source "board/toradex/colibri_imx6/Kconfig"
 source "board/udoo/Kconfig"
 source "board/udoo/neo/Kconfig"
 source "board/wandboard/Kconfig"
+source "board/erikboard/Kconfig"
 source "board/warp/Kconfig"
 
 endif

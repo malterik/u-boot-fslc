@@ -1,0 +1,9 @@
+if TARGET_ERIKBOARD
+
+config SYS_BOARD
+	default "erikboard"
+
+config SYS_CONFIG_NAME
+	default "erikboard"
+
+endif
